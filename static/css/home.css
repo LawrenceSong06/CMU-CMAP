@@ -1,0 +1,136 @@
+.banner{
+    background: url("../imgs/CMAP_Banner.jpg") 50% 25%;
+    background-size: 100%, 100%, cover;
+    animation: 10s bg_breath ease infinite alternate-reverse;
+}
+
+nav li{
+    border-bottom: none;
+}
+
+main>div{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.slogan{
+    box-sizing: border-box;
+    /* padding: 2em 25%; */
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width:100%;
+}
+.slogan p{
+    font-size: 1em;
+}
+
+.resources{
+    position: relative;
+    color:white;
+    overflow: hidden;
+    background-color: var(--myRed);
+    z-index: 0;
+}
+.plaid:before{
+    background-image: url("../imgs/bg-plaid-big.png");
+    background-position: 50%;
+    background-repeat: repeat;
+    background-size: auto;
+    content: "";
+    height: 9999px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    transform: rotate(41.35deg) translateX(-50%);
+    width: 9999px;
+    z-index: -1;
+}
+.resources ul{
+    height:40ex;
+    padding-left: 0;
+    list-style-type: none;
+    color:white;
+}
+.resources ul li{
+    position: relative;
+    width:25%;
+    padding: 1em 1em;
+
+    overflow: hidden;
+
+    z-index:0;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.resources ul li:after{
+    content:"";
+
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+
+    box-shadow: 
+        0 -230px 100px -100px rgba(0, 0, 0, 0.893) inset,
+        0 -40px 20px -20px rgba(0, 0, 0, 0.773) inset,
+        -8px 0px 5px -5px rgba(255, 255, 255, 0.226) inset,
+        8px 0px 5px -5px rgba(255, 255, 255, 0.226) inset;
+    z-index:-2;
+    
+    transition: filter ease .3s;
+}
+.resources ul li:hover:after{
+    filter: brightness(.4);
+}
+.resources ul li:nth-of-type(1):after{
+    background: url("../imgs/building.jpg") no-repeat 0 0;
+    background-size: cover;
+}
+.resources ul li:nth-of-type(2):after{
+    background: url("../imgs/advising.jpg") no-repeat 0 0;
+    background-size: cover;
+}
+.resources ul li:nth-of-type(3):after{
+    background: url("../imgs/personalconsulting.jpg") no-repeat 0 0;
+    background-size: cover;
+}
+.resources ul li:nth-of-type(4):after{
+    background: url("../imgs/jobplacement.jpg") no-repeat 0 0;
+    background-size: cover;
+}
+.resources *{
+    color:white;
+}
+.resources ul li div{
+    height:50%;
+}
+.resources ul li h2{
+    padding: 0;
+}
+
+.our_achievements ul{
+    gap:5%;
+}
+.our_achievements li{
+    flex-shrink: 0;
+    width: 45%;
+    padding-bottom:1em;
+}
+
+@keyframes bg_breath{
+    0%{
+        background-size: 100%, 100%, cover;
+    }
+    10%{
+        background-size: 100%, 100%, cover;
+    }
+    90%{
+        background-size: 90%, 90%, cover;
+    }
+    100%{
+        background-size: 90%, 90%, cover;
+    }
+}

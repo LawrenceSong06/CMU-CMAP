@@ -1,0 +1,107 @@
+nav li{
+    border-bottom: none;
+}
+.banner{
+    background: white;
+    background: url("../imgs/resources_banner.jpg") no-repeat 0% 10em;
+    background-size: contain;
+}
+.banner nav{
+    background-color: white;
+}
+main>h1.content{
+    padding-top:1em;
+}
+article{
+    box-sizing: border-box;
+    width:100%;
+    padding-right: 10.75%;
+    padding-bottom: 2em;
+}
+article section{
+    animation: spread_y .3s ease;
+}
+article section .body_paragraphs{
+    width: 60%;
+}
+article section .body_paragraphs p:first-of-type{
+    margin-top: 0;
+}
+article section aside{
+    width: 30%;
+}
+article section aside figure{
+    padding:0;
+    margin:0;
+}
+article section aside img{
+    width:100%;
+    object-fit: contain;
+}
+article section aside .text_block{
+    background-color: var(--myRed);
+    padding: 1.5em;
+}
+article section aside .text_block h1{
+    font-size: 2em;
+    padding-bottom: .5em;
+}
+article section aside .text_block ul{
+    padding-left: 0;
+    list-style: none;
+
+}
+article section aside .text_block ul li{
+    display: block;
+    border-top: 1px solid hsla(0, 0%, 100%, .5);
+    height:fit-content;
+}
+article section aside .text_block:not(:has(h1)) ul li{
+    border-top: none;
+}
+article section aside .text_block:not(:has(h1)) ul li a{
+    padding-top: 0;
+}
+article section aside .text_block ul li:last-of-type a{
+    padding-bottom: 0;
+}
+article section aside .text_block ul a{
+    box-sizing: border-box;
+    padding: 1.5em 0;
+    height:100%;
+    width:100%;
+    text-decoration: none;
+}
+article section aside .text_block *{
+    color:white;
+}
+
+article h1 button{
+    position: relative;
+    bottom:.5em;
+    padding:.5em 0;
+    border:0;
+    background-color: transparent;
+    transition: transform .3s ease;
+}
+article.active h1 button{
+    transform: rotate(90deg);
+}
+article:not(.active) section{
+    padding:0;
+    display: none;
+}   
+article:not(.active) h2{
+    display: none;
+}   
+
+@keyframes spread_y {
+    from{
+        transform: scaleY(0);
+        transform-origin: 0 0;
+    }
+    to {
+        transform-origin: 0 0;
+        transform: scaleY(1);
+    }
+}

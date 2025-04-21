@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission - Carnegie Mellon Action Project</title>
+    <link href="https://www.cmu.edu/favicon.ico" rel="icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/history.css">
+
+    <!-- JS -->
+    <script src="../static/js/script.js" type="module" defer></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body onload="init()">
+    <div class="flex-container flex row justify-fs">
+        <div class="flex-container flex column justify-fs transition-width">
+            <div class="banner onloader" onload="return load('.banner','../components/banner.html').then(res=>{modify_nav()})" delay='0'>
+    
+            </div>
+            <main class="flex flex column">
+                <h1 class="content">
+                    Carnegie Mellon Action Project History
+                </h1>
+                <article class="job_placement content">
+                    <section class="flex row justify-spbtw">
+                        <div class="body_paragraphs">           
+                            <p>
+                                The Carnegie-Mellon Action Project was created in the Spring of 1968 
+                                    with the object of recruiting minority students and assisting them toward graduation.
+                                <span class="citation">(C-MAP -- Report, 1976-1978, p. 5)</span>
+                                In Carnegie Mellon University, a predominantly whtie college, we recognized that there
+                                    is a cultural difference between white and minority that confronts students
+                                    when they are trying to achieve academic success. 
+                                Minority students always struggle to access to the college resources and emotionally connect
+                                    with other students in a white community.    
+                                <span class="citation"> (Sanday, Johnson, Hamilton, Mullins, 1968, p. 1)</span>
+                            </p>
+                            <p>
+                                To correct this imbalance, we created Carnegie Mellon Action Project.
+                                The program initially emphasized on providing the students with academic assistance, and teacher-
+                                    counselors are recruited to achieve this goal. The teacher counselors are working to provide
+                                    minority students connections to the administrative personnel, faculty, and other students.
+                                They are also in charge of identifing students' difficulties and communicate to solve them. 
+
+                                <span class="citation"> (Sanday, Johnson, Hamilton, Mullins, 1968, p. 6)</span>
+                            </p>
+                            <p>
+                                Later, we realized that the teacher-counselors are insufficient for helping the students.
+                                The teacher-counselors' multitute of roles in academic and social assistance have caused problems in 
+                                    supporting the students.
+                                The students are experiencing cognitive conflict between the teacher-counselors' supportive social
+                                    role and authoritarian academic posture.
+                                Therefore, we developed a more complicated system included the advisors, counselors, and tutors.
+                                    
+                                <span class="citation"> (C-MAP -- Black Students on Campus [DIGITIZED], 1970-1971, p. 4)</span>
+                            </p>
+                            <p>
+                                Over the years, we are also enhancing the ratio of minority students in engineering and science.
+                                Previously, most students in our program had enrolled in the school of the Humanities and Social
+                                Sciences and College of Fine Arts. However, there are few students in Carnegie Institue of Technology
+                                and Mellon Institute of Science. 
+                                Thus, we encouraged students to study engineering and science and developed relevant resources including
+                                    the August Program.
+                                The improvement of minority ratio in engineering and sciences is an important step of us towards eliminating
+                                    racial imbalance in the college.  
+                                <span class="citation">(C-MAP -- Report, 1976-1978, p. 5)</span>
+                            </p>
+                            <p>
+                                Today, we are coninuing to support students both emotionally and academically, 
+                                and we are still achieving our goal of reducing the impact of anticipated problems to minority students.
+                            </p>
+                        </div>
+                        <aside>
+                            <!-- <div class="text_block">
+                                <ul>
+                                    <li>
+                                        <a href="" class="underlined iconfont flex row justify-spbtw">
+                                            <span>
+                                                See Job Placements
+                                            </span>
+                                            <span>
+                                                &#xe629;
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </aside>
+                    </section>
+                </article>
+            </main>
+            <div class="page_bottom onloader" onload="load('.page_bottom','../components/page_bottom.html')">
+
+            </div>
+            <footer class="onloader" onload="return load('footer','../components/footer.html')" delay='0'>
+    
+            </footer>
+        </div>
+        <aside class="menu onloader" onload="return make_nav('.menu','../components/menu.html')" delay='2'>
+            
+        </aside>
+    </div>
+</body>
+</html>

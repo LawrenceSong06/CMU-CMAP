@@ -1,0 +1,44 @@
+.banner{
+    background-color: white;
+    min-height: fit-content;
+}
+main>h1.content{
+    padding-top:1em;
+    padding-bottom: 0;
+}
+.faculty{
+    padding-top:2em;
+    padding-right: 10.75%;
+    padding-bottom: 2em;
+}
+.faculty .card{
+    width: 31.333%;
+    box-sizing: border-box;
+    font-size: 90%;
+    margin: 0 1% 2em 0;
+    padding: 1vw;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+.faculty .card .photo{
+    width:100%;
+    aspect-ratio: 600/600;
+}
+.faculty .card .photo img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+.faculty .card .name{
+    margin:0;
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 1em 0;
+    color:var(--myRed);
+    text-decoration: underline;
+}
+.faculty .card p{
+    padding:0;  
+    margin: .5em 0;
+}

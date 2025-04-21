@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnegie Mellon Action Project</title>
+    <link href="https://www.cmu.edu/favicon.ico" rel="icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/home.css">
+
+    <!-- JS -->
+    <script src="./static/js/script.js" type="module" defer></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body onload="init()">
+    <div class="flex-container flex row justify-fs">
+        <div class="flex-container flex column justify-fs transition-width">
+            <div class="banner onloader" onload="return load('.banner','./components/banner.html')" delay='0'>
+    
+            </div>
+            <main class="flex flex-inherit">
+                <div class="slogan content">
+                    <h1 class="uppercase">
+                        We Support Minority Students To Succeed
+                    </h1>
+                    <h2>We are a big family that cares</h2>
+                    <p>
+                        CMAP is a program designed to facilitate minority students to success at Carnegie Mellon University.
+                        We provide academic advising, peer tutoring, scholarships, and many other resources to help you success.
+                        We also help to to connect to other resources offered for all students. <span class="citation">(Raczkiewicz,1981,pp. 18-19)</span>
+                    </p>
+                    <p>
+                        Over the years, CMAP has made significant strides in empowering minority students across disciplines. 
+                        From 1970 to 1976, we have successfully increased the retention rate of minority freshmen students from 73% to 91% in engineering and science
+                            and helped students to achiev very high QPA. <span class="citation">(C-MAP -- Report, 1976-1978)</span>
+                        Our comprehensive academic and social support system has helped many students achieve their academic and career goals. 
+                    </p>
+                    <p>
+                        Most importantly, we are a big family that cares for every member with warmth.
+                        We connect members, listen to them, motivate them, and empower them.
+                        Our faculty members are responsible and to every singe student in the program.
+                        In here, you will find the person who always support you in your journey.
+                    </p>
+                    <p>
+                        Join the family, thrive here, and engage in building a brighter future of all Blacks.
+
+                    </p>
+                    <a href="./views/admission.html" class="ghost btn transition-color">Apply Now</a>
+                </div>
+                <div class="resources plaid content">
+                    <h1 class="color-inherit">We Offer Many Resources for Your Success</h1>
+                    <ul class="flex row justify-spbtw align-items-str">
+                        <li>
+                            <div>
+                                <h2>The August Program</h2>
+                                <p>
+                                    CMAP offers a 5 weeks long program prepares students for college study before entering,
+                                        providing students with neccessary fundations for their studies. 
+                                    <span class="citation">(C-MAP -- Report, 1976-1978, pp. 8-9)</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h2>Advising & Support</h2>
+                                <p>
+                                    Our advisors gathers information from professors to keep track of every students and
+                                        give students up-to-date information and advises to improve their performance.
+                                    <span class="citation">(C-MAP -- Report, 1976-1978, p. 10)</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h2>Personal Counseling</h2>
+                                <p>
+                                    Personal counseling teaches students a wide range of skills,
+                                        including  learning strategies, career planning, financial aids, medical topics, etc.
+                                    <span class="citation">(C-MAP -- Report, 1976-1978, p. 11)</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h2>Job Placement</h2>
+                                CMAP provides students chances to find high-paying job for summer and seeks for permanent employment
+                                    in our cooperating corporations.
+                                <span class="citation">(C-MAP -- Report, 1976-1978, p. 12)</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="our_achievements content">
+                    <h1 class="uppercase">Our Achievments</h1>
+                    <ul class="flex row wrap">
+                        <li>
+                            From 1977 to 1978, we successfully enrolled 140 minority students in CIT, 
+                                successfully increased the representation of minority students in previously
+                                white-dominated schools.
+                            <span class="citation">(C-MAP -- Report, 1976-1978, p. 22)</span>
+                        </li>
+                        <li>
+                            CMAP has also encouraged minority female students to enter new fields,
+                                including science and engineering. We enrolled 35 female minority students in
+                                CIT/MIS in 1978, comparing to 0 in 1968.
+                            Our trained minority women are among the most actively sought members of
+                                today's job market.
+                            
+                            <span class="citation">(C-MAP -- Report, 1976-1978, p. 7)</span>
+                        </li>
+                        <li>
+                            CMAP graduates achieved great success in the job market--they have an employment
+                                of about 100% in a depressed job market. They are working in a variety of industries including
+                                Chemistry, Engineering, AMS, Psychology, English, Economics, Drama, Music, and Design.
+                            <span class="citation">(C-MAP -- Report, 1976-1978, p. 15)</span>
+                        </li>
+                        <li>
+                            Our program also enhanced the colleges' influence in local community. 20%
+                            of our students come from Pittsburgh area and another 20% of our students
+                            come from Pennsyvania.
+                            <span class="citation">(Raczkiewicz, 1976-1978, pp. 18-19)</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page_bottom onloader" onload="load('.page_bottom','./components/page_bottom.html')">
+
+                </div>
+            </main>
+            <footer class="onloader" onload="return load('footer','./components/footer.html')" delay='0'>
+    
+            </footer>
+        </div>
+        <aside class="menu onloader" onload="return make_nav('.menu','./components/menu.html')" delay='2'>
+            
+        </aside>
+    </div>
+</body>
+</html>

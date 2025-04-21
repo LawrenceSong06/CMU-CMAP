@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission - Carnegie Mellon Action Project</title>
+    <link href="https://www.cmu.edu/favicon.ico" rel="icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/admission.css">
+
+    <!-- JS -->
+    <script src="../static/js/script.js" type="module" defer></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body onload="init()">
+    <div class="flex-container flex row justify-fs">
+        <div class="flex-container flex column justify-fs transition-width">
+            <div class="banner onloader" onload="return load('.banner','../components/banner.html').then(res=>{modify_nav()})" delay='0'>
+    
+            </div>
+            <main class="flex flex column">
+                <h1 class="uppercase content">
+                    Admission to Carnegie Mellon Action Project
+                </h1>
+                <div class="subview flex row justify-spbtw">
+                    <div class="intro">
+                        <h2>
+                            Why Should I Join CMAP?
+                        </h2>
+                        <p>
+                            In CMAP, we provide additional academic, social, and financial support to the minory students.
+                            Through providing these resources, we are able to correct the racial imbalance and enhance
+                            minority students' access to campus resources. By joining CMAP, minority students are more possible to
+                            achieve academic success in the university.
+                            <span class="citation"> (Sanday, Johnson, Hamilton, Mullins, 1968, p. 2)</span>
+                        </p>
+                        <h2>
+                            What Do I Need to Apply to CMAP?
+                        </h2>
+                        <ul>
+                            <li>
+                                Call to
+                                <b>
+                                    schedule an interview
+                                </b>
+                                with our admission consultants. Our admission team with three
+                                black consultants will conduct the interview in one of three
+                                community facilities near your neighborhood.
+                            </li>
+                            <li>
+                                The information of your previous college experience.
+                            </li>
+                            <li>
+                                (Optional) Your College Board, ACT, and other test data. 
+                            </li>
+                            <li>
+                                Your high school transcript.
+                            </li>
+                            <li>
+                                (Optional) Upward-Bound experience and recommendations.
+                            </li>
+                            <li>
+                                Your curriculum choice.
+                            </li>
+                            <li>
+                                Your high school record, including attendence record.
+                            </li>
+                            <li>
+                                A personal statement demonstrating your knowledge of school,
+                                counselors, and your family background.
+                            </li>
+                        </ul>
+                        <span class="citation"> (Sanday, Johnson, Hamilton, Mullins, 1968, p. 3)</span>
+                        <h2>
+                            What Do We Anticipate From You?
+                        </h2>
+                        <p>
+                            Be aware that our project is not an affirmative action program.
+                            We anticipate students to be highly motivated academically, which means
+                                you need to realize how much efforts you need to spend to be high achieving in Carnegie Mellon University.
+                            We also anticipate a student is having a good grade in their high school.
+                            <span class="citation"> (Sanday, Johnson, Hamilton, Mullins, 1968, p. 3)</span>
+                            We also expect our students can be socially responsible.
+                            <span class="citation"> (C-MAP -- Black Students on Campus [DIGITIZED], 1970-1971, p. 42)</span>
+                            
+                        </p>
+                    </div>
+                    <div class="tips">
+                        <div class="app_link">
+                            <h1>
+                                Application Portal
+                            </h1>
+                            <a href="" class="underlined">Link to Application Portal</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div class="page_bottom onloader" onload="load('.page_bottom','../components/page_bottom.html')">
+
+            </div>
+            <footer class="onloader" onload="return load('footer','../components/footer.html')" delay='0'>
+    
+            </footer>
+        </div>
+        <aside class="menu onloader" onload="return make_nav('.menu','../components/menu.html')" delay='2'>
+            
+        </aside>
+    </div>
+</body>
+</html>
